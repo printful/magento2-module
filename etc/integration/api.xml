@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Copyright 2019 Printful. All rights reserved.
+* See LICENSE.txt for license details.
+*/
+-->
+<integrations>
+    <integration name="PrintfulIntegration">
+        <resources>
+            <!-- To grant permissions to any single resource, all of its ancestor resources need permissions as well. More info about this in the readme-->
+            <!-- To grant permission to Magento_Log::online, its parent Magento_Customer::customer needs to be declared as well-->
+            <resource name="Magento_Customer::customer" />
+            <resource name="Magento_Log::online" />
+            <!-- To grant permission to Magento_Sales::reorder, all its parent resources need to be declared-->
+            <resource name="Magento_Backend::admin" />
+            <resource name="Magento_Sales::sales" />
+            <resource name="Magento_Catalog::catalog" />
+            <resource name="Magento_Catalog::catalog_inventory" />
+            <resource name="Magento_Catalog::products" /> <!-- View products -->
+            <resource name="Magento_Catalog::categories" />
+            <resource name="Magento_Backend::stores" />
+            <resource name="Magento_Backend::stores_settings" />
+            <resource name="Magento_Backend::store"/>
+            <resource name="Magento_Backend::stores_attributes" />
+            <resource name="Magento_Catalog::attributes_attributes" /> <!-- View product attributes -->
+            <resource name="Magento_Catalog::update_attributes" /> <!-- Edit product attributes -->
+            <resource name="Magento_Catalog::sets" /> <!-- Submit attribute sets -->
+            <resource name="Magento_Sales::actions" />
+            <resource name="Magento_Sales::actions_view" /> <!-- View orders -->
+            <resource name="Magento_Sales::actions_edit" /> <!-- Edit orders -->
+            <resource name="Magento_Sales::email" />
+            <resource name="Magento_Sales::cancel" />
+            <resource name="Magento_Sales::ship" />
+            <resource name="Magento_Sales::comment" />
+            <resource name="Magento_Sales::shipment" />
+            <resource name="Magento_Tax::manage_tax" />
+            <resource name="Magento_InventoryApi::inventory" />
+            <resource name="Magento_InventoryApi::stock" />
+            <resource name="Magento_InventoryApi::stock_edit" />
+        </resources>
+    </integration>
+</integrations>

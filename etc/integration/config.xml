@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Copyright 2019 Printful. All rights reserved.
+* See LICENSE.txt for license details.
+*/
+-->
+<integrations>
+    <integration name="PrintfulIntegration">
+        <email>devsupport@printful.com</email>
+        <endpoint_url>https://api.printful.com/magento2/callback</endpoint_url>
+        <identity_link_url>https://www.printful.com/dashboard/magento2/connect-callback</identity_link_url>
+    </integration>
+</integrations>
