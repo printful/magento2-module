@@ -11,7 +11,6 @@
         }
     },
     "require": {
-        "php": "5.6.22 - 7.3.0",
         "magento/framework": "^2.0.0",
         "magento/module-integration": "^2.0.0"
     }

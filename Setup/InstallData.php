@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2019 Printful. All rights reserved.
+ * Copyright 2021 Printful. All rights reserved.
  * See LICENSE.txt for license details.
  */
 namespace Printful\Integration\Setup;
